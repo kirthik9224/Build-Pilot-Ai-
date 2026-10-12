@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 // Description: Modern SaaS Dashboard displaying aggregated database metrics across all modules
 
 export default function Dashboard({ stats, user, go }) {

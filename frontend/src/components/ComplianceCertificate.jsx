@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 // Description: Compliance certificate generator & printable PDF exporter
 
 import { useState } from 'react';
@@ -94,7 +94,7 @@ export default function ComplianceCertificate({ stats, user }) {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', paddingTop: '2rem', borderTop: '1px solid var(--line)' }}>
           <div>
             <div style={{ fontFamily: 'cursive', fontSize: '1.4rem', color: 'var(--violet)' }}>
-              Logaraj S
+              Kirthik
             </div>
             <div style={{ borderTop: '1px solid var(--muted)', width: '180px', marginTop: '4px' }}></div>
             <small className="muted">Project Owner & Lead Sign-Off</small>

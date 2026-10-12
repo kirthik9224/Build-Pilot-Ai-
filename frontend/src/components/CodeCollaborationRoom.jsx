@@ -1,10 +1,10 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-12
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-12
 // Description: Interactive Real-Time Code Collaboration Room with synchronized cursors and inline comments
 
 import { useState } from 'react';
 
 const TEAM_USERS = [
-  { id: 'usr-1', name: 'Logaraj S (Lead)', color: '#a855f7', line: 12, cursor: 'Col 24' },
+  { id: 'usr-1', name: 'Kirthik (Lead)', color: '#a855f7', line: 12, cursor: 'Col 24' },
   { id: 'usr-2', name: 'Kirthik (Lead)', color: '#6366f1', line: 6, cursor: 'Col 18' },
   { id: 'usr-3', name: 'Alex Rivera (Dev)', color: '#38bdf8', line: 18, cursor: 'Col 9' },
   { id: 'usr-4', name: 'BuildPilot AI Agent', color: '#4ade80', line: 14, cursor: 'Suggesting fix…' },
@@ -44,7 +44,7 @@ export default function CodeCollaborationRoom({ user, onTriggerToast }) {
   const [code, setCode] = useState(INITIAL_CODE);
   const [activeUsers] = useState(TEAM_USERS);
   const [comments, setComments] = useState([
-    { id: 1, line: 14, author: 'Logaraj S', text: 'Should we add idempotent transaction tokens here?', time: '10m ago' },
+    { id: 1, line: 14, author: 'Kirthik', text: 'Should we add idempotent transaction tokens here?', time: '10m ago' },
     { id: 2, line: 20, author: 'BuildPilot AI', text: '⚡ Suggested patch: Add retry backoff policy for payment gateway timeouts.', time: '2m ago' },
   ]);
   const [newComment, setNewComment] = useState('');

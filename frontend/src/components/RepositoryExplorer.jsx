@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-12
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-12
 // Description: Interactive In-Browser Repository File Explorer and Code Editor
 
 import { useState } from 'react';

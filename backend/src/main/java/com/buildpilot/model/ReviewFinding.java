@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 // Description: ReviewFinding entity representing specific code review issues and suggested fixes
 
 package com.buildpilot.model;

@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 // Description: Secure authentication component supporting Login and Registration
 
 import { useState } from 'react';
@@ -73,7 +73,7 @@ export default function Login({ onLogin }) {
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="e.g. Logaraj S"
+                  placeholder="e.g. Kirthik"
                 />
               </label>
               <label>

@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 // Description: Conversational AI Developer Assistant with ChatGPT & Gemini web tools
 
 import { useState, useRef, useEffect } from 'react';

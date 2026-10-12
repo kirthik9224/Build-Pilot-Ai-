@@ -1,5 +1,5 @@
 @echo off
-REM Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+REM Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 REM Description: One-Click Startup Script launching MySQL check, Spring Boot backend, and Vite frontend
 
 echo ==========================================================

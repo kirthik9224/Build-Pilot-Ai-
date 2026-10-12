@@ -1,7 +1,7 @@
 # BuildPilot AI Pro — Production Deployment Guide
 
 **Organization:** Orbytes Global Solutions  
-**Owner:** Logaraj S  
+**Owner:** Kirthik  
 **Date:** 2026-10-12  
 
 ---

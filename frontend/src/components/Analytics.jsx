@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 // Description: Advanced Analytics Studio with MTTR, defect velocity, code churn, and test radar
 
 import { useState } from 'react';

@@ -1,10 +1,10 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 // Description: Team workspace with role permissions, members roster, and live activity feed
 
 import { useState } from 'react';
 
 const TEAM_MEMBERS = [
-  { id: 1, name: 'Logaraj S', email: 'logaraj@orbytes.com', role: 'LEAD', status: 'Active', prCount: 14, avatar: 'LS' },
+  { id: 1, name: 'Kirthik', email: 'logaraj@orbytes.com', role: 'LEAD', status: 'Active', prCount: 14, avatar: 'LS' },
   { id: 2, name: 'Kirthik', email: 'demo@buildpilot.dev', role: 'LEAD', status: 'Active', prCount: 22, avatar: 'K' },
   { id: 3, name: 'Alex Rivera', email: 'alex@buildpilot.dev', role: 'DEVELOPER', status: 'Active', prCount: 18, avatar: 'AR' },
   { id: 4, name: 'Sarah Chen', email: 'sarah@buildpilot.dev', role: 'QA', status: 'In Review', prCount: 9, avatar: 'SC' },
@@ -31,7 +31,7 @@ export default function TeamWorkspace({ user }) {
 
   const [members, setMembers] = useState(() => [
     ...currentMember,
-    { id: 99, name: 'Logaraj S', email: 'logaraj@orbytes.com', role: 'LEAD', status: 'Active', prCount: 28, avatar: 'LS' },
+    { id: 99, name: 'Kirthik', email: 'logaraj@orbytes.com', role: 'LEAD', status: 'Active', prCount: 28, avatar: 'LS' },
     { id: 100, name: 'Alex Rivera', email: 'alex@buildpilot.dev', role: 'DEVELOPER', status: 'Active', prCount: 18, avatar: 'AR' },
     { id: 101, name: 'Sarah Chen', email: 'sarah@buildpilot.dev', role: 'QA', status: 'Active', prCount: 9, avatar: 'SC' },
     { id: 102, name: 'Marcus Brody', email: 'marcus@buildpilot.dev', role: 'DEVOPS', status: 'Active', prCount: 31, avatar: 'MB' },

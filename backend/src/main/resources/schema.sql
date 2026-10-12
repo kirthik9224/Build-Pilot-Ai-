@@ -1,4 +1,4 @@
--- Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+-- Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-11
 -- Description: MySQL Database Schema for BuildPilot AI Pro
 
 CREATE TABLE IF NOT EXISTS users (

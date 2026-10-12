@@ -1,4 +1,4 @@
-// Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-12
+// Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-12
 // Description: Automated Release Notes, Changelog, and GitHub Release Document Generator
 
 import { useState } from 'react';
@@ -22,7 +22,7 @@ export default function ReleaseNotesGenerator({ onTriggerToast }) {
     setGenerating(true);
     setTimeout(() => {
       setGenerating(false);
-      const generated = `# Release ${version} — ${releaseTitle}\n\n**Release Date:** ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}\n**Organization:** Orbytes Global Solutions\n**Lead Architect:** Logaraj S\n\n---\n\n## 🚀 What's New\n- **Real-Time Code Pairing:** Synchronized multi-cursor editing rooms and inline review comment threads.\n- **Full-Stack App Wizard:** Scaffolds complete Spring Boot 3 + React 18 + MySQL applications from scratch in 60 seconds.\n- **Multi-Cloud Orchestration:** Production Kubernetes Helm charts, AWS ECS Terraform modules, and GCP Cloud Run specs.\n\n## 🛡️ Security & Fixes\n- Resolved CVE-2022-42889 and upgraded dependencies to verified secure baselines.\n- Zero regressions confirmed across all 9 JUnit 5 test suites.\n\n## ⚡ Performance Improvements\n- Database index tuning reduced high-concurrency query execution times from 34ms to 4ms.\n\n## 📋 Commit Changelog\n${COMMITS_LOG.map((c) => `- [\`${c.hash}\`] **[${c.type}]** ${c.message}`).join('\n')}\n\n---\n*Generated automatically by BuildPilot AI Pro*`;
+      const generated = `# Release ${version} — ${releaseTitle}\n\n**Release Date:** ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}\n**Organization:** Orbytes Global Solutions\n**Lead Architect:** Kirthik\n\n---\n\n## 🚀 What's New\n- **Real-Time Code Pairing:** Synchronized multi-cursor editing rooms and inline review comment threads.\n- **Full-Stack App Wizard:** Scaffolds complete Spring Boot 3 + React 18 + MySQL applications from scratch in 60 seconds.\n- **Multi-Cloud Orchestration:** Production Kubernetes Helm charts, AWS ECS Terraform modules, and GCP Cloud Run specs.\n\n## 🛡️ Security & Fixes\n- Resolved CVE-2022-42889 and upgraded dependencies to verified secure baselines.\n- Zero regressions confirmed across all 9 JUnit 5 test suites.\n\n## ⚡ Performance Improvements\n- Database index tuning reduced high-concurrency query execution times from 34ms to 4ms.\n\n## 📋 Commit Changelog\n${COMMITS_LOG.map((c) => `- [\`${c.hash}\`] **[${c.type}]** ${c.message}`).join('\n')}\n\n---\n*Generated automatically by BuildPilot AI Pro*`;
 
       setNotes(generated);
       if (onTriggerToast) onTriggerToast(`Generated Release Notes for ${version}!`, 'success');

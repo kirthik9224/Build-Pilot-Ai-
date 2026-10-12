@@ -1,7 +1,7 @@
 # BuildPilot AI Pro — Complete Technical Architecture & Specification
 
 **Organization:** Orbytes Global Solutions  
-**Owner:** Logaraj S  
+**Owner:** Kirthik  
 **Date:** 2026-10-11  
 
 ---

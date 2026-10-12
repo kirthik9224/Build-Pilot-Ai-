@@ -1,4 +1,4 @@
-<!-- Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-12 -->
+<!-- Organization: Orbytes Global Solutions, Owner: Kirthik, Created at: 2026-10-12 -->
 <!-- Description: Complete production documentation and portfolio guide for BuildPilot AI Pro -->
 
 <p align="center">
@@ -137,5 +137,5 @@ Backups are archived in the `backups/` directory with automatic timestamps.
 
 ## 6. Organization & Ownership
 - **Organization**: Orbytes Global Solutions
-- **Owner**: Logaraj S
+- **Owner**: Kirthik
 - **Repository**: BuildPilot AI Pro
