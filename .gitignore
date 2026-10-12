@@ -1,0 +1,31 @@
+# Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-12
+# Description: Git ignore configuration for BuildPilot AI Pro
+
+# Node & Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+
+# Java & Backend build artifacts
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/logs/
+
+# Secrets and environment configurations
+.env
+.env.production
+*.secret
+*.pem
+*.key
+
+# Backups and database dumps
+backups/
+
+# Operating System & IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml

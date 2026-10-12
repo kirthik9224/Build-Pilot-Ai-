@@ -1,0 +1,29 @@
+services:
+  # ---------------------------------------------
+  # BuildPilot AI Pro Backend Service on Render
+  # ---------------------------------------------
+  - type: web
+    name: buildpilot-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    plan: free
+    region: oregon
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: BUILDPILOT_JWT_SECRET
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: BUILDPILOT_AI_PROVIDER
+        value: gemini
+      - key: BUILDPILOT_AI_MODEL
+        value: gemini-1.5-flash

@@ -1,0 +1,53 @@
+# Organization: Orbytes Global Solutions, Owner: Logaraj S, Created at: 2026-10-11
+# Description: Docker Compose specification for MySQL, Spring Boot Backend, and React Frontend
+
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: buildpilot-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: NewPassword@123
+      MYSQL_DATABASE: buildpilot
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: buildpilot-backend
+    restart: always
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/buildpilot?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: NewPassword@123
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: buildpilot-frontend
+    restart: always
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  mysql_data:
